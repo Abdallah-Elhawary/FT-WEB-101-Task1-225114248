@@ -1,0 +1,162 @@
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #222222;
+    --primary-color: #2563eb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    padding: 20px 40px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #222222;
+    color: white;
+}
+
+/* Logo */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+/* Main Content */
+main {
+    padding: 30px 40px;
+    text-align: center;
+}
+
+/* Profile Photo */
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Cards Container */
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+/* Individual Card */
+.card {
+    flex: 1;
+    padding: 25px;
+    background-color: #f1f5f9;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.card h3 {
+    color: #2563eb;
+}
+
+.card p {
+    color: #444444;
+}
+
+/* Contact Form */
+#contact {
+    margin-top: 50px;
+}
+
+#contactForm {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#contactForm textarea {
+    min-height: 120px;
+}
+
+#contactForm button {
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 1px solid #e5e7eb;
+    color: #555555;
+}
+
+#darkModeBtn {
+    background-color: #374151;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+body.dark-mode {
+    background-color: #111827;
+    color: #f9fafb;
+}
+
+body.dark-mode .card {
+    background-color: #1f2937;
+    color: #f9fafb;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #1f2937;
+    color: white;
+    border-color: #374151;
+}
